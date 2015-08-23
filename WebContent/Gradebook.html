@@ -1,0 +1,85 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>Student fields</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+  <script src="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/js/bootstrap.min.js"></script>
+  <script src="//cdnjs.cloudflare.com/ajax/libs/bootstrap-datepicker/1.3.0/js/bootstrap-datepicker.min.js"></script>
+  <link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/bootstrap-datepicker/1.3.0/css/datepicker.min.css" />
+<link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/bootstrap-datepicker/1.3.0/css/datepicker3.min.css" />
+<link href="http://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap.min.css" rel="stylesheet" type="text/css" />
+<link href="http://cdnjs.cloudflare.com/ajax/libs/bootstrap-datepicker/1.3.0/css/datepicker.css" rel="stylesheet" type="text/css" />
+  <script src="http://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/js/bootstrap.min.js"></script>
+<script src="http://cdnjs.cloudflare.com/ajax/libs/bootstrap-datepicker/1.3.0/js/bootstrap-datepicker.js"></script>
+<script type="text/javascript" src="/bower_components/jquery/jquery.min.js"></script>
+  <script type="text/javascript" src="/bower_components/moment/min/moment.min.js"></script>
+  <script type="text/javascript" src="/bower_components/bootstrap/dist/js/bootstrap.min.js"></script>
+  <script type="text/javascript" src="/bower_components/eonasdan-bootstrap-datetimepicker/build/js/bootstrap-datetimepicker.min.js"></script>
+  <link rel="stylesheet" href="/bower_components/bootstrap/dist/css/bootstrap.min.css" />
+  <link rel="stylesheet" href="/bower_components/eonasdan-bootstrap-datetimepicker/build/css/bootstrap-datetimepicker.min.css" />
+  <script src="bootstrap-datepicker.js"> </script>
+  
+  
+  <meta charset="utf-8">
+  <title>jQuery UI Datepicker - Default functionality</title>
+  <link rel="stylesheet" href="//code.jquery.com/ui/1.11.4/themes/smoothness/jquery-ui.css">
+  <script src="//code.jquery.com/jquery-1.10.2.js"></script>
+  <script src="//code.jquery.com/ui/1.11.4/jquery-ui.js"></script>
+  <link rel="stylesheet" href="/resources/demos/style.css">
+  <script>
+  $(function() {
+    $( "#datepicker" ).datepicker();
+  });
+  </script>
+</head>
+<body>
+<form action="Assignment_into_db" method="get">
+<div class="container">
+
+	<h2> Add Assignment</h2>
+	<div class="form-group col-xs-5">
+	  <label for="ID">Student ID:</label>
+	  <input type="text" class="form-control" id="ID" name="ID">
+	</div><br><br><br><br>
+	
+	<div class="form-group col-xs-5">
+	  <label for="Asn">Assignment:</label>
+	  <input type="text" class="form-control" id="Assignment" name="Assignment">
+	</div><br><br><br><br>
+	
+	<div class="form-group col-xs-5">
+		<label for="Ast">Assignment type:</label>
+		<select class="form-control selectpicker" id="type" name="type">
+			<option>Homework</option>
+			<option>Quiz</option>
+			<option>Test</option>
+			<option>Project</option>
+		</select> 
+	</div><br><br><br><br>
+
+	<div class="form-group col-xs-5">
+	<label for="dt">Assignment date:</label>
+   		 <input class="form-control" type="text" id="datepicker" name="datepicker" >
+    </div><br><br><br><br>
+	
+	
+	<div class="form-group  col-xs-5">
+	  <label for="Grd">Grade:</label>
+	  <input type="text" class="form-control" id="Grade" name="Grade" >
+	</div><br><br><br><br>
+	
+	 <button type="submit" class="btn btn-default " >Add assignment</button>
+ 	 
+ 	 <button type="submit" class="btn btn-default " formaction="/GradeBook2/Search">Search </button>
+</div>
+</form>
+
+</body>
+
+</html>
+
+
